@@ -3,7 +3,6 @@ import React from 'react';
 import { Ionicons } from '@expo/vector-icons';
 
 const Gunler = [
-  // 2026 Yılı
   { id: 1, ad: "Regaip Kandili", tarih: "22 Ocak 2026, Perşembe" },
   { id: 2, ad: "Miraç Kandili", tarih: "15 Şubat 2026, Pazar" },
   { id: 3, ad: "Berat Kandili", tarih: "3 Mart 2026, Salı" },
@@ -14,17 +13,6 @@ const Gunler = [
   { id: 8, ad: "Hicri Yılbaşı", tarih: "16 Temmuz 2026, Perşembe" },
   { id: 9, ad: "Aşure Günü", tarih: "25 Temmuz 2026, Cumartesi" },
   { id: 10, ad: "Mevlid Kandili", tarih: "24 Eylül 2026, Perşembe" },
-  // 2027 Yılı
-  // { id: 11, ad: "Regaip Kandili", tarih: "11 Ocak 2027, Pazartesi" },
-  // { id: 12, ad: "Miraç Kandili", tarih: "4 Şubat 2027, Perşembe" },
-  // { id: 13, ad: "Berat Kandili", tarih: "20 Şubat 2027, Cumartesi" },
-  // { id: 14, ad: "Ramazan Başlangıcı", tarih: "8 Mart 2027, Pazartesi" },
-  // { id: 15, ad: "Kadir Gecesi", tarih: "2 Nisan 2027, Cuma" },
-  // { id: 16, ad: "Ramazan Bayramı", tarih: "7 Nisan 2027, Çarşamba" },
-  // { id: 17, ad: "Kurban Bayramı", tarih: "14 Haziran 2027, Pazartesi" },
-  // { id: 18, ad: "Hicri Yılbaşı", tarih: "4 Temmuz 2027, Pazar" },
-  // { id: 19, ad: "Aşure Günü", tarih: "13 Temmuz 2027, Salı" },
-  // { id: 20, ad: "Mevlid Kandili", tarih: "13 Eylül 2027, Pazartesi" },
 ];
 
 const İslamDays = () => {

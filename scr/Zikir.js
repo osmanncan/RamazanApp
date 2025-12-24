@@ -6,17 +6,14 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 const ZikirmatikScreen = () => {
   const [count, setCount] = useState(0);
 
-  // Uygulama açıldığında kaydedilmiş sayacı yükle
   useEffect(() => {
     loadCount();
   }, []);
 
-  // Sayaç her değiştiğinde kaydet
   useEffect(() => {
     saveCount(count);
   }, [count]);
 
-  // AsyncStorage'dan sayacı yükle
   const loadCount = async () => {
     try {
       const savedCount = await AsyncStorage.getItem('zikirCount');
@@ -28,7 +25,6 @@ const ZikirmatikScreen = () => {
     }
   };
 
-  // AsyncStorage'a sayacı kaydet
   const saveCount = async (value) => {
     try {
       await AsyncStorage.setItem('zikirCount', value.toString());
@@ -37,19 +33,16 @@ const ZikirmatikScreen = () => {
     }
   };
 
-  // Sayacı bir artıran ve hafif bir titreşimle geri bildirim veren fonksiyon
   const increment = () => {
     setCount(prevCount => prevCount + 1);
-    Vibration.vibrate(50); // Dokunsal geri bildirim
+    Vibration.vibrate(50);
   };
 
-  // Sayacı bir azaltan (0'ın altına düşürmeyen) fonksiyon
   const decrement = () => {
     setCount(prevCount => (prevCount > 0 ? prevCount - 1 : 0));
     if (count > 0) Vibration.vibrate(30);
   };
 
-  // Sayacı sıfırlayan fonksiyon
   const reset = () => {
     setCount(0);
   };
@@ -80,10 +73,9 @@ const ZikirmatikScreen = () => {
 
 export default ZikirmatikScreen;
 
-// Ekran genişliğini alalım
 const { width } = Dimensions.get('window');
-const buttonSize = width * 0.7; // Dairenin boyutu ekran genişliğinin %70'i olsun
-const counterFontSize = buttonSize / 3; // Font boyutu dairenin boyutuna orantılı olsun
+const buttonSize = width * 0.7;
+const counterFontSize = buttonSize / 3;
 
 const styles = StyleSheet.create({
   container: {

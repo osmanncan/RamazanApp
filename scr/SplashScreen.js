@@ -4,19 +4,18 @@ import { StyleSheet, StatusBar, ImageBackground } from 'react-native';
 const SplashScreen = ({ navigation }) => {
 
   useEffect(() => {
-    // 3 saniye sonra ana ekrana yönlendir
     const timer = setTimeout(() => {
       navigation.replace('Home');
     }, 3000);
 
-    return () => clearTimeout(timer); // Component unmount olduğunda zamanlayıcıyı temizle
+    return () => clearTimeout(timer);
   }, [navigation]);
   
   return (
     <ImageBackground 
       source={require('../assets/cami.png')} 
       style={styles.container}
-      resizeMode="cover" // Resmi ekrana sığdırır
+      resizeMode="cover"
     >
       <StatusBar barStyle="light-content" />
     </ImageBackground>

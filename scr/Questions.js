@@ -41,12 +41,11 @@ const styles = StyleSheet.create({
   cardText: { color: '#CBD5E1', lineHeight: 21, fontSize: 15 },
   card: {
     backgroundColor: '#1E293B',
-    padding: 18, // Daha geniş
+    padding: 18,
     borderRadius: 16,
     marginBottom: 14,
-    borderLeftWidth: 5, // Daha belirgin
+    borderLeftWidth: 5,
     borderLeftColor: '#EAB308',
-    // Hover efekti için hazır
     shadowColor: "#EAB308",
     shadowOffset: { width: -2, height: 2 },
     shadowOpacity: 0.2,

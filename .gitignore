@@ -38,3 +38,7 @@ yarn-error.*
 
 # generated native folders
 /ios
+# Gizli Dosyalar - GitHub'da Gösterilmeyecek
+scr/constants.js
+scr/HomeScreens.js
+scr/Zikir.js

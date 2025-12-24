@@ -1,11 +1,8 @@
 import React, { useState } from 'react';
 import { StyleSheet, Text, View, ScrollView, ActivityIndicator } from 'react-native';
 
-
-
 const Calendar = ({ loading, monthlySchedule = [], navigation }) => {
 
-// Eğer veri yükleniyorsa dönen yuvarlak göster
 if (loading) {
 return (
 <View style={styles.loadingContainer}>
@@ -23,12 +20,10 @@ return (
 {monthlySchedule.map((gun, index) =>{
 const vakitler = gun.timings;
 
-
 const turkceAylar = [
   "Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran",
   "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"
 ];
-
 
 const gunBilgisi = gun.date.gregorian;
 const gunNumarasi = gunBilgisi.day;

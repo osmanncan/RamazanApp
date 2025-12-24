@@ -168,11 +168,10 @@ const styles = StyleSheet.create({
   card: {
     backgroundColor: '#1E293B',
     padding: 16,
-    borderRadius: 16, // Daha yuvarlak
+    borderRadius: 16,
     marginBottom: 16,
     borderLeftWidth: 4,
     borderLeftColor: '#EAB308',
-    // Gradient efekti için iki katman kullan
     shadowColor: "#EAB308",
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.15,
